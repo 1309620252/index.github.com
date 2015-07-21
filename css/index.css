@@ -1,0 +1,29 @@
+/* CSS Document */
+	*{margin:0;padding:0;}
+	.wrap{width:1100px;margin:0 auto;}
+	.header{width:100%;background:#F1F1F1; overflow:hidden;height:80px;}
+	.img{margin-left:20px;float:left; margin-top:10px;}
+	.title{font-size:40px; font-family:Georgia, "Times New Roman", Times, serif;          font-weight: bold;float:left;margin-left:400px;line-height:80px;}
+	.mainBody{width:100%;background:#99CDFF; position:relative; overflow:hidden;height:900px;}
+	.left{position:relative; width:40%;}
+	.ul{float:right; margin-top:200px;}
+	.li{ list-style:none; background:#FFCC33;margin-top:20px; font-size:24px; font-family: Georgia, "Times New Roman", Times, serif; border-radius:4px;margin-right:200px;width:300px; text-align:center; height:40px;line-height:40px;}
+	li:hover{ cursor:pointer;}
+	a{ text-decoration:none;color:black;}
+	a:hover{ cursor:pointer;color:white;}
+	.liContent{font-size:16px;color:black;background:#FFFFCB; list-style:none;border:1px solid #333}
+	.education{width:500px;height:370px;background:#FFFFCB;position:absolute;z-index:1; margin-top:150px;margin-left:50px; border-radius:10px; box-shadow: 10px 10px 5px #888888;
+}
+	.educationLeft{width:30%;height:480px;margin-top:10px; position: relative;float:left;}
+	.first{ border-radius:6px;width:100%;height:50px;background:#FFCC33;margin-top:30px;position:absolute;text-align:center;line-height:50px;}
+	.educationRight{margin:10px 20px;height:480px; float:left;width:62%}
+	h3{float:left; width:100px;;}
+	p{float:left; margin-left:-15px;}
+	canvas{width:100%;height:180px;margin-top:80px;}
+	.self{width:200px;height:250px;margin-top:230px;margin-left:180px;position:absolute;}
+	.technology{ width:500px;height:550px;background:#FFFFCB; position:absolute;z-index:1;margin-top:100px; border-radius:10px; box-shadow: 10px 10px 5px #888888; left:-520px;}
+	.tecDiv{ width:490px;height:100px;border-bottom:3px solid #FFCC33;}
+	.progress{margin-top:10px; margin-left:20px;}
+	td{padding-left:30px; padding-top:30px;}
+	.checkTec{font-size:24px;margin-top:30px;margin-left:40px;}
+    .checkTech{margin-top:15px; margin-left:40px;}

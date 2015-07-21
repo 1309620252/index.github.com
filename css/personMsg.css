@@ -1,0 +1,11 @@
+/* CSS Document */
+	*{margin:0;padding:0;}
+	.wrap{width:1100px;margin:0 auto;}
+	.header{width:100%;background:#F1F1F1; overflow:hidden;height:80px;}
+	.img{margin-left:20px;float:left; margin-top:10px; float:left;}
+	.title{font-size:40px; font-family:Georgia, "Times New Roman", Times, serif;          font-weight: bold;float:left;margin-left:300px;line-height:80px;float:left;}
+	.mainBody{width:100%;background:#99CDFF; position:relative; overflow:hidden;height:750px;}
+	.left{width:70%;height:600px;background:#FFFFCB;margin-top:50px;margin-left:150px; box-shadow: 10px 10px 5px #888888; border-radius:8px; float:left;}
+	td{padding-top:30px;padding-left:30px; font-size:24px;}
+	.right{width:120px;height:180px;margin-right:70px; margin-top:20px;}
+

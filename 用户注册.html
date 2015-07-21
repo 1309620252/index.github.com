@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jQuery1.7.1.js"></script>
+<title>用户注册</title>
+<style type="text/css">
+	/*网页主体*/
+	.main{
+		width:500px;
+		height:300px;
+		margin:0 auto;
+		background:pink;
+		box-shadow:  15px 15px 8px #CCC;
+		border-radius:8px;
+		}
+	/*用户名及密码的文本输入框*/
+	.user{
+		width:350px;
+		height:38px;
+		font-size:20px;
+		color:#666;
+		margin-left:10px;
+		}
+	/*修饰用户名和密码字体*/
+	.font{
+		padding-left:10px;
+		font-size:24px;
+		}
+	/*提交按钮*/	
+	.btn{
+		margin-top:30px;
+		width:100px;
+		height:35px;
+		background:#999;
+		border-radius:4px;
+		font-size:18px;
+		line-height:35px;
+		text-align:center;
+		}
+	.btn:hover{
+		cursor:pointer;
+		color:white;
+		}
+	/*Sign Up*/
+	.title{
+		height:80px;
+		line-height:80px;
+		text-align:center;
+		}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//点击文本输入框，选中事件
+        $("#userName").bind("click",function(){
+			$("#userName").select();
+			});
+		 $("#password").bind("click",function(){
+			$("#password").select();
+			});
+    });
+	//点击提交按钮
+	function onSubmit(){
+		if($("#userName").val().trim() == ""){
+			alert("Please input userName");
+			$("#userName").focus();
+		}else if($("#password").val().trim() == ""){
+			alert("Please input password");
+			$("#password").focus();
+		}else{
+			alert("您确认要提交吗？");
+			$("#sub").submit();
+			location.href = "personMsg.html";
+			}
+	}
+</script>
+</head>
+
+<body> 
+	<!--网站主体-->
+	<div class="main">
+	<h1 class="title">Sign Up</h1>
+    <form>
+    	<table class="table">
+        	<tr>
+            	<td class="font">UserName:</td>
+                <td> 
+                	<input id="userName" type="text" class="user" placeholder="UserName"/>
+                </td>
+            </tr>
+            <tr>
+            	<td class="font">Password:</td>
+                <td>
+                	<input id="password" type="password" class="user"/>
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="2" align="center">
+                	<div id="sub" class="btn" onclick="onSubmit();">Submit</div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+</html>
